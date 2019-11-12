@@ -145,6 +145,8 @@ public class SendNotificationTask extends AsyncTask<Void, Void, Void> {
                 notification.setSmallIcon(smallIconResId);
             }
 
+	    notification.setColor(Color.parseColor("#a30e38"));
+
             //large icon
             String largeIcon = bundle.getString("large_icon");
             if(largeIcon != null && android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP){
